@@ -6,6 +6,6 @@ export type Connector = {
   Transport: typeof Transport;
 };
 
-export const ConnectorFactory: (awsConfig: AWS.Config) => Connector;
+export function ConnectorFactory: (awsConfig: AWS.Config) => Connector;
 
 export default ConnectorFactory;
